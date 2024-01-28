@@ -3,7 +3,7 @@ local aux = {}
 local getGc = getgc
 local getInfo = debug.getinfo or getinfo
 local getUpvalue = debug.getupvalue or getupvalue or getupval
-local getConstants = debug.getconstants or getconstants or getconsts
+local getConstants = getconstants or getconsts
 local isXClosure = is_synapse_function or issentinelclosure or is_protosmasher_closure or is_sirhurt_closure or istempleclosure or checkclosure
 local isLClosure = islclosure or is_l_closure or (iscclosure and function(f) return not iscclosure(f) end)
 
